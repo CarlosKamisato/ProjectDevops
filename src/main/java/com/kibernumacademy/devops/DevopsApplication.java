@@ -26,6 +26,8 @@ public class DevopsApplication implements CommandLineRunner {
  Student student4 = new Student("Rene", "Jorquera", "renejorquera.ktd@orakle.cl");
     repository.save(student1);
     repository.save(student2);
+    repository.save(student3);
+    repository.save(student4);
 
   }
 }

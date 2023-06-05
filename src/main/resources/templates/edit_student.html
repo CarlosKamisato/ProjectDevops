@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Register Student</title>
+  <title>Editar Estudiante</title>
   <!-- fuente google fonts Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <!-- / fuente google fonts Poppins -->
@@ -23,11 +23,11 @@
           <div class="row">
             <div class="col-6 offset-3 formulario">
               <!-- Formulario -->
-              <h2 class="text-center mb-5">Edit Student</h2>
+              <h2 class="text-center mb-5">Editar Estudiante</h2>
               <form th:action="@{/students/{id}(id=${student.id})}" th:object="${student}" method="POST">
 
                 <div class="mb-3">
-                  <label for="name" class="form-label">Name</label>
+                  <label for="name" class="form-label">Nombre</label>
                   <input
                           type="text"
                           class="form-control"
@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="mb-3">
-                  <label for="last-name" class="form-label">Last Name</label>
+                  <label for="last-name" class="form-label">Apellido</label>
                   <input
                           type="text"
                           class="form-control"
@@ -66,7 +66,7 @@
                 <input type="hidden" name="id" id="id" value="">
 
                 <div class="d-grid gap-2">
-                  <button type="submit" class="btn btn-success">Edit Student</button>
+                  <button type="submit" class="btn btn-success">Editar Estudiante</button>
                 </div>
 
               </form>
