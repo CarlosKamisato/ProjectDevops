@@ -21,9 +21,9 @@ pipeline {
 
         stage('Build') {
             steps {
-                //script {
-                    //sh 'mvn clean package'                    
-                //}
+                script {
+                    sh 'mvn clean package'                    
+                }
             }
         }
 
