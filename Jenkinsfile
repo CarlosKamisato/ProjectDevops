@@ -9,7 +9,7 @@ pipeline {
 
     tools { 
         maven 'mavenjenkins'
-        jdk 'Java17'
+        jdk 'temurin'
     }
 
     stages {
