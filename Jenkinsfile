@@ -30,7 +30,8 @@ pipeline {
 
         stage('Archive Artifacts') {
             steps {
-                archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
+                //archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
+                echo 'archiveArtifacts artifacts'
             }
         }
 
