@@ -22,24 +22,21 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    //sh 'mvn clean package'
-                    echo 'Construyendo la aplicacion'                   
+                    sh 'mvn clean package'                                      
                 }
             }
         }
 
         stage('Archive Artifacts') {
             steps {
-                //archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
-                echo 'archiveArtifacts artifacts'
+                archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
             }
         }
 
         stage('Test') {
             steps {
                 script {
-                    //sh 'mvn test'
-                     echo 'TEST'  
+                    sh 'mvn test'                      
                 }
             }
         }
