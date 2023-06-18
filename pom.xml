@@ -14,8 +14,7 @@
     <name>devops</name>
     <description>devops</description>
     <properties>
-        <java.version>11</java.version>
-        <spring.version>5.0.2.RELEASE</spring.version>
+        <java.version>17</java.version>        
     </properties>
     <dependencies>
         <dependency>
