@@ -9,7 +9,7 @@ pipeline {
 
     tools { 
         maven 'mavenjenkins'
-        jdk 'jenkisjava'
+        jdk 'Java17'
     }
 
     stages {
