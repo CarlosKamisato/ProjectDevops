@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_ProjectDevops_1688403126246-pr-trigger-input-set
+  identifier: Build_ProjectDevops_1688403126246prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: manu
+  pipeline:
+    identifier: Build_ProjectDevops_1688403126246
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
