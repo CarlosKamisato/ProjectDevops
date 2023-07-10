@@ -72,7 +72,7 @@
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
-        <!-- Requerido para trabajar con Thymeleaf Spring Security Tags -->
+        <!-- Requerido para trabajar con  Thymeleaf Spring Security Tags -->
         <dependency>
             <groupId>org.thymeleaf.extras</groupId>
             <artifactId>thymeleaf-extras-springsecurity5</artifactId>
