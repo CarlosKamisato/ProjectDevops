@@ -14,7 +14,6 @@ pipeline:
     - stage:
         name: test-harness
         identifier: testharness
-        description: ""
         type: CI
         spec:
           cloneCodebase: true
@@ -22,7 +21,7 @@ pipeline:
             os: Linux
             arch: Amd64
           runtime:
-            type: Docker
+            type: Cloud
             spec: {}
           execution:
             steps:
@@ -33,6 +32,8 @@ pipeline:
                   spec:
                     shell: Sh
                     command: echo "test"
+        delegateSelectors:
+          - delegate-docker
     - stage:
         name: deplyharness
         identifier: deplyharness
